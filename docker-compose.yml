@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  service-name:
+    image: news-author-extract
+    container_name: main
+    restart: "always"
+    build: ./
+    ports:
+      - "3578:3578"
+    network_mode: bridge
+    # environment:
+    #   - APP_PORT=${APP_PORT}
+    #   - SHERLOCK_PROD_BASE_API=${API_COM_PROD_BASE_API}
+    #   - SHERLOCK_BETA_BASE_API=${API_COM_BETA_BASE_API}
