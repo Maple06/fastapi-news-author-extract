@@ -1,8 +1,8 @@
 # api core module for all endpoints
-from fastapi import APIRouter
+from fastapi import APIRouter, Form
+
 from .api_v1.endpoints.pontianak_endpoint import PontianakEndpoint
 # from .api_v1.schemas.pontianak_schema import PontianakSchema
-from fastapi import Form
 
 router = APIRouter(
     prefix='/api/v1',
